@@ -1,0 +1,59 @@
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Headers "*"
+Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+# # php -- BEGIN cPanel-generated handler, do not edit
+# # Set the “ea-php74” package as the default “PHP” programming language.
+# <IfModule mime_module>
+#   AddHandler application/x-httpd-ea-php74___lsphp .php .php7 .phtml
+# </IfModule>
+# # php -- END cPanel-generated handler, do not edit
+# <IfModule mod_rewrite.c>
+#   # enable the rewrite engine
+#   RewriteEngine On
+#   # Set your root directory
+#   RewriteBase /
+
+#   # remove the .html extension
+#   RewriteCond %{THE_REQUEST} ^GET\ (.*)\.html\ HTTP
+#   RewriteRule (.*)\.html$ $1 [R=301]
+  
+#   # remove the .php extension
+#   RewriteCond %{THE_REQUEST} ^GET\ (.*)\.php\ HTTP
+#   RewriteRule (.*)\.php$ $1 [R=301]
+
+#   # remove index and reference the directory
+#   RewriteRule (.*)/index$ $1/ [R=301]
+
+#   # remove trailing slash if not a directory
+#   RewriteCond %{REQUEST_FILENAME} !-d
+#   RewriteCond %{REQUEST_URI} /$
+#   RewriteRule (.*)/ $1 [R=301]
+
+#   # forward request to html file, **but don't redirect (bot friendly)**
+#   RewriteCond %{REQUEST_FILENAME}.html -f
+#   RewriteCond %{REQUEST_URI} !/$
+#   RewriteRule (.*) $1\.html [L]
+  
+#   # forward request to php file, **but don't redirect (bot friendly)**
+#   RewriteCond %{REQUEST_FILENAME}.php -f
+#   RewriteCond %{REQUEST_URI} !/$
+#   RewriteRule (.*) $1\.php [L]
+  
+#   RewriteCond %{REQUEST_FILENAME} !-f
+#   RewriteCond %{REQUEST_URI} !(.*)/$
+#   RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+  
+# </IfModule>
+
+# # BEGIN cPanel-generated php ini directives, do not edit
+# # Manual editing of this file may result in unexpected behavior.
+# # To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# # For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+# <IfModule php7_module>
+
+# </IfModule>
+# <IfModule lsapi_module>
+
+# </IfModule>
+# # END cPanel-generated php ini directives, do not edit
